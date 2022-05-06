@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@layer base {
+  @font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url(./fonts/inter/Inter-Regular.woff) format('woff');
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 600;
+    src: url(./fonts/inter/Inter-SemiBold.woff) format('woff');
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 700;
+    src: url(./fonts/inter/Inter-Bold.woff) format('woff');
+  }
+}
+
+
+.prose-lg {
+  max-width: inherit;
+}
+
+.prose-lg a {
+  @apply px-0.5 pt-1 no-underline border-b-2 border-indigo-500 hover:bg-indigo-100 whitespace-nowrap hover:border-indigo-700;
+}
+
+.prose-lg p, .prose-lg li{
+  @apply font-serif;
+}
+
+.gatsby-resp-image-wrapper {
+  max-height: 480px;
+  width: auto !important;
+}
+
+.gatsby-resp-image-image {
+  max-height: 480px;
+  width: auto !important;
+  left: 50% !important;
+  transform: translate(-50%, 0);
+}
